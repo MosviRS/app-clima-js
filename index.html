@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container-p-4 mt-4">
+        <div class="col">
+            <div class="col-md-6 mx-auto text-center">
+              <!-- WEATHER CARD -->
+                <div class="card rounded-lg">
+                    <div class="card-body">
+                    <h1 id="weather-location" class="h3">Weather Location</h1>
+                    <div class="row-md-6 mx-auto text-center">
+                        <h3 id="weather-description" class=" d-inline p-2 h4">Weather description</h3>
+                        <img src="" class="d-inline p-2" id="weather-icon">
+                    </div>
+                    <h3 id="weather-string" class="h4">Weather Grades</h3>
+                    <ul class="list-group mt-4">
+                        <li id="weather-humidity" class="list-group-item">Humedad</li>
+                        <li id="weather-wind" class="list-group-item">wind</li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="card mt-4 rounded-lg">
+                    <div class="card-body">
+                        <form id="w-form">
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="city" aria-describedby="cityHelp" placeholder="Enter city" autofocus>
+                              <small id="cityHelp" class="form-text text-muted">Seach weather by a city.</small>
+                            </div>
+                            <div class="form-group">
+                              <input type="text" id="countryCode" class="form-control" placeholder="Country Code">
+                              <small id="cityHelp" class="form-text text-muted">Input the country code</small>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block" id="w-change-btn">Submit</button>
+                            </div>  
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>
