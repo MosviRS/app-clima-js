@@ -15,3 +15,6 @@ $ npm install
 ```
 $ npm run dev
 ```
+
+Live:
+https://mosvirs.github.io/app-clima-js/
